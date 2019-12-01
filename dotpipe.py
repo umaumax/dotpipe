@@ -11,6 +11,8 @@ import networkx
 def main():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument('--nodesep', default=1.0, type=float)
+    parser.add_argument('--ranksep', default=1.0, type=float)
     parser.add_argument('-o', '--output-filepath', default='out.dot')
     parser.add_argument('-F', '--delim', help='input delimiter', default=' +')
     parser.add_argument(
@@ -46,7 +48,9 @@ def main():
             print('edges:', edges)
 
     agrpah = networkx.nx_agraph.to_agraph(G)
-    agrpah.graph_attr.update(ranksep='5.0')
+    agrpah.graph_attr.update(
+        nodesep=str(options.nodesep),
+        ranksep=str(options.ranksep))
     agrpah.draw(options.output_filepath, prog=options.agrpah_prog)
 
 
