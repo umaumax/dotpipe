@@ -1,5 +1,7 @@
 # dotpipe
 
+generate node and edge graph from pipe input
+
 ## how to use
 ```
 cat sample.txt | ./dotpipe.py -o out.dot.svg
@@ -7,4 +9,19 @@ cat sample.txt | ./dotpipe.py -o out.dot.svg
 
 e.g.
 
-![ ./out.dot.svg ]
+input
+```
+a b
+b c
+c a
+d e
+e f
+f a
+hello world
+aaaaa bbb
+abc bbb
+bbb a apple temp
+```
+
+output
+![ sample svg output ]( ./out.dot.svg )
