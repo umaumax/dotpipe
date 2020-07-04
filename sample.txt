@@ -1,0 +1,10 @@
+a b
+b c
+c a
+d e
+e f
+f a
+hello world
+aaaaa bbb
+abc bbb
+bbb a apple temp
