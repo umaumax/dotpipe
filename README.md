@@ -2,6 +2,11 @@
 
 generate node and edge graph from pipe input
 
+## how to install
+```
+pip3 install https://github.com/umaumax/dotpipe/archive/master.tar.gz
+```
+
 ## how to use
 ```
 cat sample.txt | ./dotpipe.py -o out.dot.svg
