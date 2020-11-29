@@ -3,7 +3,7 @@
 generate node and edge graph from pipe input
 
 ## how to install
-```
+``` bash
 pip3 install https://github.com/umaumax/dotpipe/archive/master.tar.gz
 ```
 
